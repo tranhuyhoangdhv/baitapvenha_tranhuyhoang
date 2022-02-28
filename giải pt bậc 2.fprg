@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TRAN HUY HOANG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-27 08:36:33 SA"/>
+        <attribute name="created" value="VFJBTiBIVVkgSE9BTkc7TEFQVE9QLUVRVVZRSTRTOzIwMjItMDItMjc7MDc6NDM6MTcgU0E7MzM3Nw=="/>
+        <attribute name="edited" value="VFJBTiBIVVkgSE9BTkc7TEFQVE9QLUVRVVZRSTRTOzIwMjItMDItMjc7MDg6MzY6MzMgU0E7MTszNDg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="dental" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="x1" type="Integer" array="False" size=""/>
+            <declare name="x2" type="Integer" array="False" size=""/>
+            <output expression="&quot;nhap a: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;nhap c :&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;nhap b : &quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="dental" expression="b*b-4*a*c"/>
+            <if expression="dental &gt;= 0">
+                <then>
+                    <if expression="dental = 0">
+                        <then>
+                            <assign variable="x1" expression="-b/2*a"/>
+                            <assign variable="x2" expression="-b/2*a"/>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; nghi&#7879;m l&#224;: &quot; &amp;x1" newline="True"/>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; nghi&#7879;m l&#224;: &quot; &amp;x2" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="x1" expression="(-b + sqrt(dental)/(2*a))"/>
+                            <assign variable="x2" expression="(-b - sqrt(dental)/(2*a))"/>
+                            <output expression="&quot;ph&#432;&#417;ng trinh co nghiem l&#224; : &quot;&amp;x1" newline="False"/>
+                            <output expression="&quot;ph&#432;&#417;ng trinh co nghiem l&#224; : &quot;&amp;x2" newline="False"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m ! &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

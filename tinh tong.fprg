@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TRAN HUY HOANG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-21 02:44:28 CH"/>
+        <attribute name="created" value="VFJBTiBIVVkgSE9BTkc7TEFQVE9QLUVRVVZRSTRTOzIwMjItMDItMDk7MDk6Mzk6MTYgU0E7MzM4Mw=="/>
+        <attribute name="edited" value="VFJBTiBIVVkgSE9BTkc7TEFQVE9QLUVRVVZRSTRTOzIwMjItMDItMjE7MDI6NDQ6MjggQ0g7NTszNDcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;nhap so n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="s" expression="s+i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;tong la: &quot; &amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

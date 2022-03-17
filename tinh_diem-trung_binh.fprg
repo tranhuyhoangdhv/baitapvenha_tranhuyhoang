@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TRAN HUY HOANG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-14 03:23:15 CH"/>
+        <attribute name="created" value="VFJBTiBIVVkgSE9BTkc7TEFQVE9QLUVRVVZRSTRTOzIwMjItMDMtMTQ7MDE6NDA6NDcgQ0g7MzM1OQ=="/>
+        <attribute name="edited" value="VFJBTiBIVVkgSE9BTkc7TEFQVE9QLUVRVVZRSTRTOzIwMjItMDMtMTQ7MDM6MjM6MTUgQ0g7NjszNDcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <declare name="e" type="Real" array="False" size=""/>
+            <declare name="s" type="Real" array="False" size=""/>
+            <output expression="&quot;xin chao tran huy hoang, moi ban chon so tin chi minh can tinh&quot;" newline="True"/>
+            <output expression="&quot;s&#7889; t&#237;n ch&#7881; l&#224; ( 3 or 5 )&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x&lt;=3">
+                <then>
+                    <output expression="&quot;enter midterm exam scores(GK): &quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;enter final exam score(CK): &quot;" newline="True"/>
+                    <input variable="b"/>
+                    <output expression="&quot;enter attendance points(CC):&quot;" newline="True"/>
+                    <input variable="c"/>
+                    <output expression="&quot;enter course record score(HSHP):&quot;" newline="True"/>
+                    <input variable="d"/>
+                    <assign variable="s" expression="a*0.2+b*0.5+c*0.1+d*0.2"/>
+                </then>
+                <else>
+                    <if expression="x&gt;=5">
+                        <then>
+                            <output expression="&quot;enter midterm exam scores(GK1): &quot;" newline="True"/>
+                            <input variable="a"/>
+                            <output expression="&quot;enter midterm exam scores(GK2): &quot;" newline="True"/>
+                            <input variable="e"/>
+                            <output expression="&quot;enter final exam score(CK): &quot;" newline="True"/>
+                            <input variable="b"/>
+                            <output expression="&quot;enter attendance points(CC):&quot;" newline="True"/>
+                            <input variable="c"/>
+                            <output expression="&quot;enter course record score(HSHP):&quot;" newline="True"/>
+                            <input variable="d"/>
+                            <assign variable="s" expression="a*0.1+e*0.1+b*0.5+c*0.1+d*0.2"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;vui long nhap lai !&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="s&gt;=4">
+                <then>
+                    <if expression="s&gt;5.4">
+                        <then>
+                            <if expression="S&gt;6.9">
+                                <then>
+                                    <if expression="s&gt;8.4">
+                                        <then>
+                                            <output expression="&quot;x&#7871;p lo&#7841;i A&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;x&#7871;p lo&#7841;i B &quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;x&#7871;p lo&#7841;i C  &quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;xep loai D &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ch&#432;a &#273;&#7911; &#273;i&#7873;u ki&#7879;n qua m&#244;n !&quot;" newline="True"/>
+                    <output expression="&quot;x&#7871;p lo&#7841;i F &quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;average of subject(TBM)is: &quot; &amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-25 02:24:20 PM"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyMi0wMy0yMTswMTozMjo1MCBQTTsyMTE3"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyMi0wMy0yMTswMjo0MDoxMSBQTTs1OzIyMjY="/>
+        <attribute name="edited" value="TEFCMi1QQzA2O0RFU0tUT1AtUkg2MUFCQjsyMDIyLTAzLTI1OzAyOjI0OjIwIFBNOzE7Mjk2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <output expression="&quot;nhap so nguyen duong n = &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n == 1">
+                <then>
+                    <output expression="&quot;n khong phai la so nguyen&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n&lt;4">
+                        <then>
+                            <output expression="&quot;n la so nguyen to&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <declare name="i" type="Integer" array="False" size=""/>
+                            <assign variable="i" expression="2"/>
+                            <for variable="i" start="2" end="n-1" direction="inc" step="1">
+                                <if expression="n%i==0">
+                                    <then>
+                                        <output expression="&quot;khong la so nguyen to&quot;" newline="True"/>
+                                        <breakpoint/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </for>
+                            <output expression="&quot;La so nguyen to&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
